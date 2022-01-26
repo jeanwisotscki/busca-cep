@@ -4,30 +4,69 @@
   box-sizing: border-box;
 }
 
-#container {
-  background-color: aqua;
+body {
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  background-color: rgb(221, 235, 235);
+}
+
+#main-container {
+  max-width: 80%;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  padding: 0 30px;
 }
 
 .titulo {
-  background-color: rgb(24, 36, 204);
+  color: rgb(35, 99, 216);
+  font-size: 3rem;
+  font-weight: bold;
+  text-align: center;
+  margin: 2rem;
 }
 
 .input-container {
-  background-color: rgb(204, 120, 24);
+  display: flex;
+  flex-direction: column;
 }
 .input-container label {
-  background-color: rgb(204, 24, 189);
+  font-size: 1.1rem;
+  margin-bottom: 0.5rem;
 }
 .input-container input {
-  background-color: rgb(204, 24, 24);
+  font-size: 1.3rem;
+  padding: 7px;
+  margin-bottom: 2rem;
+  border: 1px solid black;
+  border-radius: 4px;
 }
 
 .result-container {
   background-color: rgb(204, 24, 114);
+  display: none;
 }
 .result-container h4 {
   background-color: rgb(239, 243, 0);
 }
 .result-container p {
   background-color: rgb(39, 204, 24);
+}
+.nova-busca {
+  display: none;
+}
+
+.btn {
+  background-color: rgb(35, 99, 216);
+  color: white;
+  font-size: 1.3rem;
+  font-weight: bold;
+  margin: 15px auto;
+  padding: 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+.btn:hover {
+  background-color: rgb(5, 5, 211);
 }

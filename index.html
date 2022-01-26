@@ -10,12 +10,14 @@
     <title>BuscaCep Brasil</title>
 </head>
 <body>
-    <main id="container">
+    <main id="main-container">
         <h1 class="titulo">BuscaCep Brasil</h1>
 
         <div class="input-container">
             <label for="cep">Digite um CEP:</label>
-            <input type="text" name="cep" id="cep">
+            <input type="text" name="cep" id="cep" placeholder="99999-000" required>
+
+            <button class="btn buscar">Buscar</button>
         </div>
 
         <div class="result-container">
@@ -28,6 +30,8 @@
             <h4>CEP</h4>
             <p>99999-000</p>
         </div>
+
+        <button class="btn nova-busca">Nova Busca</button>
     </main>
     
     <script src="./js/script.js"></script>
