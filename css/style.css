@@ -1,0 +1,33 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+#container {
+  background-color: aqua;
+}
+
+.titulo {
+  background-color: rgb(24, 36, 204);
+}
+
+.input-container {
+  background-color: rgb(204, 120, 24);
+}
+.input-container label {
+  background-color: rgb(204, 24, 189);
+}
+.input-container input {
+  background-color: rgb(204, 24, 24);
+}
+
+.result-container {
+  background-color: rgb(204, 24, 114);
+}
+.result-container h4 {
+  background-color: rgb(239, 243, 0);
+}
+.result-container p {
+  background-color: rgb(39, 204, 24);
+}
