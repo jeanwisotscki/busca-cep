@@ -15,7 +15,7 @@
 
         <div class="input-container">
             <label for="cep">Digite um CEP:</label>
-            <input type="text" name="cep" id="cep" placeholder="97979000"maxlength="8" oninput="this.value = this.value.replace(/[^0-9]/g, '').replace(/(\..*)\./g, '$1');"/>
+            <input type="text" name="cep" id="cep" placeholder="Somente números"maxlength="8" oninput="this.value = this.value.replace(/[^0-9]/g, '').replace(/(\..*)\./g, '$1');"/>
 
             <button class="btn buscar">Buscar</button>
         </div>
@@ -23,13 +23,13 @@
         <div class="result-container">
             <div class="show-results">
                 <h4 class="logradouro">Logradouro/Nome</h4>
-                <p>rua piriri parara</p>
+                <p></p>
                 <h4 class="bairro">Bairro/Distrito</h4>
-                <p>--:--</p>
+                <p></p>
                 <h4 class="localidade">Localidade/UF</h4>
-                <p>--:--</p>
+                <p></p>
                 <h4 class="cep">CEP</h4>
-                <p>99999-000</p>
+                <p></p>
             </div>
             <button class="btn nova-busca">Nova Busca</button>
         </div>
