@@ -34,17 +34,16 @@ function getDados(cep) {
 }
 
 btnNovaBusca.addEventListener("click", () => {
-  resultContainer.style.display = "none";
-  inputContainer.style.display = "block";
+  window.location.reload();
 });
 
-// bairro: "Centro"
-// cep: "89251-000"
-// complemento: ""
-// ddd: "47"
-// gia: ""
-// ibge: "4208906"
-// localidade: "Jaraguá do Sul"
-// logradouro: "Avenida Getúlio Vargas"
-// siafi: "8175"
-// uf: "SC"
+// bairro
+// cep
+// complemento
+// ddd
+// gia
+// ibge
+// localidade
+// logradouro
+// siafi
+// uf
