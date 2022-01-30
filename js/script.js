@@ -15,21 +15,26 @@ function getInputValue() {
 function getDados(cep) {
   const link = "https://viacep.com.br/ws/" + cep + "/json/";
 
-  const endereco = fetch(link)
+  const consultaCep = fetch(link)
     .then((res) => res.json())
-    .then((body) => {
-      inputContainer.style.display = "none";
-      resultContainer.style.display = "block";
+    .then((endereco) => {
+      if (endereco.cep != undefined) {
+        inputContainer.style.display = "none";
+        resultContainer.style.display = "block";
 
-      const logradouro = document.querySelector(".logradouro");
-      const bairro = document.querySelector(".bairro");
-      const localidade = document.querySelector(".localidade");
-      const cep = document.querySelector(".cep");
+        const logradouro = document.querySelector(".logradouro");
+        const bairro = document.querySelector(".bairro");
+        const localidade = document.querySelector(".localidade");
+        const cep = document.querySelector(".cep");
 
-      logradouro.nextElementSibling.innerText = body.logradouro;
-      bairro.nextElementSibling.innerText = body.bairro;
-      localidade.nextElementSibling.innerText = body.localidade + "/" + body.uf;
-      cep.nextElementSibling.innerText = body.cep;
+        logradouro.nextElementSibling.innerText = endereco.logradouro;
+        bairro.nextElementSibling.innerText = endereco.bairro;
+        localidade.nextElementSibling.innerText =
+          endereco.localidade + "/" + endereco.uf;
+        cep.nextElementSibling.innerText = endereco.cep;
+      } else {
+        alert("CEP Inválido");
+      }
     });
 }
 
