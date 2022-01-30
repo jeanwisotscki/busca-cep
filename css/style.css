@@ -30,12 +30,12 @@ body {
   flex-direction: column;
 }
 .input-container label {
-  font-size: 1.1rem;
+  font-size: 1.3rem;
   margin-bottom: 0.5rem;
 }
 .input-container input {
-  font-size: 1.3rem;
-  padding: 7px;
+  font-size: 1.4rem;
+  padding: 10px;
   margin-bottom: 2rem;
   border: 1px solid black;
   border-radius: 4px;
