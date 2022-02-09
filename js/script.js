@@ -35,6 +35,9 @@ function getDados(cep) {
       } else {
         alert("CEP Inválido");
       }
+    })
+    .catch((erro) => {
+      alert("ERRO! CEP inválido ou não encontrado.");
     });
 }
 
