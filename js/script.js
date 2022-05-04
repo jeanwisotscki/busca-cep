@@ -8,14 +8,13 @@ const resultContainer = document.querySelector(".result-container");
 btnBuscar.addEventListener("click", getInputValue);
 
 function getInputValue() {
-  const valorInput = cepInput.value;
-  getDados(valorInput);
+  getDados(cepInput.value);
 }
 
 function getDados(cep) {
   const link = "https://viacep.com.br/ws/" + cep + "/json/";
 
-  const consultaCep = fetch(link)
+  fetch(link)
     .then((res) => res.json())
     .then((endereco) => {
       if (endereco.cep != undefined) {
@@ -38,20 +37,10 @@ function getDados(cep) {
     })
     .catch((erro) => {
       alert("ERRO! CEP inválido ou não encontrado.");
+      console.log(erro);
     });
 }
 
 btnNovaBusca.addEventListener("click", () => {
   window.location.reload();
 });
-
-// bairro
-// cep
-// complemento
-// ddd
-// gia
-// ibge
-// localidade
-// logradouro
-// siafi
-// uf
