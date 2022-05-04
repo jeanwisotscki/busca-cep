@@ -9,9 +9,9 @@ Confira o resultado [clicando aqui](https://jeanwisotscki.github.io/busca-cep/) 
 # Design
 
 ![Desktop](./img/desktop.png)
-![Desktop](./img/busca-desktop.png)
+![Desktop](./img/resultado-desktop.png)
 ![Mobile](./img/mobile.png)
-![Mobile](./img/busca-mobile.png)
+![Mobile](./img/resultado-mobile.png)
 
 # Techs usadas no desenvolvimento
 
