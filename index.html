@@ -1,41 +1,52 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="shortcut icon" href="./search-favicon.ico" type="image/x-icon">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="shortcut icon"
+      href="./img/search-favicon.ico"
+      type="image/x-icon"
+    />
 
-    <link rel="stylesheet" href="./css/style.css">
-    
+    <link rel="stylesheet" href="./css/style.css" />
+
     <title>BuscaCep Brasil</title>
-</head>
-<body>
+  </head>
+  <body>
     <main id="main-container">
-        <h1 class="titulo">BuscaCep Brasil</h1>
+      <h1 class="titulo">BuscaCep Brasil</h1>
 
-        <div class="input-container">
-            <label for="cep">Digite um CEP:</label>
-            <input type="text" name="cep" id="cep" placeholder="Somente números"maxlength="8" oninput="this.value = this.value.replace(/[^0-9]/g, '').replace(/(\..*)\./g, '$1');"/>
+      <div class="input-container">
+        <label for="cep">Digite um CEP:</label>
+        <input
+          type="text"
+          name="cep"
+          id="cep"
+          placeholder="Somente números"
+          maxlength="8"
+          oninput="this.value = this.value.replace(/[^0-9]/g, '').replace(/(\..*)\./g, '$1');"
+        />
 
-            <button class="btn buscar">Buscar</button>
+        <button class="btn buscar">Buscar</button>
+      </div>
+
+      <div class="result-container">
+        <div class="show-results">
+          <h4 class="logradouro">Logradouro/Nome</h4>
+          <p></p>
+          <h4 class="bairro">Bairro/Distrito</h4>
+          <p></p>
+          <h4 class="localidade">Localidade/UF</h4>
+          <p></p>
+          <h4 class="cep">CEP</h4>
+          <p></p>
         </div>
-
-        <div class="result-container">
-            <div class="show-results">
-                <h4 class="logradouro">Logradouro/Nome</h4>
-                <p></p>
-                <h4 class="bairro">Bairro/Distrito</h4>
-                <p></p>
-                <h4 class="localidade">Localidade/UF</h4>
-                <p></p>
-                <h4 class="cep">CEP</h4>
-                <p></p>
-            </div>
-            <button class="btn nova-busca">Nova Busca</button>
-        </div>
+        <button class="btn nova-busca">Nova Busca</button>
+      </div>
     </main>
-    
+
     <script src="./js/script.js"></script>
-</body>
+  </body>
 </html>

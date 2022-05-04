@@ -1,5 +1,25 @@
-# busca-cep
+# Projeto | BuscaCep Brasil
 
-<h1>Site para busca e consulta de CEP's Brasileiros</h1>
+### Desenvolvido como projeto de estudo.
 
-<h4>Você pode ver o resultado por este link: <a href="https://jeanwisotscki.github.io/busca-cep/" target="_blank">Acessar projeto</a></h4>
+### Focos de estudo: uso de API's.
+
+Confira o resultado clicando [aqui](https://jeanwisotscki.github.io/busca-cep/) (Dica: control + click para abrir o link em uma nova guia. 😉)
+
+# Design
+
+![Desktop](./desktop.png)
+![Desktop](./busca-desktop.png)
+![Mobile](./mobile.png)
+![Mobile](./busca-mobile.png)
+
+# Techs usadas no desenvolvimento
+
+- HTML
+- CSS
+- JS
+- GIT
+
+# Desenvolvido por
+
+- [@jeanwisotscki](https://github.com/jeanwisotscki/)
